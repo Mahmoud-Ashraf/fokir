@@ -1,0 +1,700 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+body {
+    color: #555555;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+
+.slider {
+    background-image: url(../img/slider/slider-01.jpg);
+    height: 100vh;
+    max-width: 100vw;
+    background-position: center;
+}
+.slider .overlay {
+    background-color: rgba(0,0,0,.8);
+    height: 100%;
+    text-align: center; 
+}
+.header {
+    background-color: transparent;
+    padding: 18px 10%;
+}
+.header .nav {
+    width:100%;
+    overflow: auto;
+}
+.header .nav .logo {
+    float: left;
+}
+.header .nav .menu {
+    float: right;
+}
+.header .nav a.logo {
+    color: #ff305b;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.header .nav .menu a {
+    color: #fff;
+    margin-left: 20px;
+    font-weight: 300;
+    transition: all .5s;
+    vertical-align: middle;
+}
+.header .nav .menu a.active {
+    color: #ff305b;
+}
+.header .nav .menu a:hover {
+    color: #ff305b;
+}
+.clr {
+    clear: both;
+}
+.slider .slider-text {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.slider-text h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.slider-text h1 {
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.slider-text h4 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.profile, .portfolio, .feedback, .contact{
+    background-color: #fff;
+}
+.our-services, .stats, .our-blog {
+    background-color: #f1f1f1;
+}
+.container {
+    padding: 70px 10%;
+    overflow: auto;
+}
+
+
+.profile .container .profile-pic {
+    float: left;
+    width: 30%;
+    border-radius: 5px;
+    border: 10px solid #333;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.profile .container .profile-pic img {
+    width: 100%;
+}
+.profile .container .profile-pic:hover .pic-overlay {
+    opacity: 1;
+    top: 0;
+}
+.profile .container .profile-pic .pic-overlay {
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.profile .container .profile-pic .pic-overlay .social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.profile .container .profile-pic .pic-overlay .social-icons i {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.profile .container .profile-pic .pic-overlay .social-icons i:hover {
+    color: #ff305b;
+}
+.profile .container .profile-desc {
+    float: left;
+    width:70%;
+    padding-left: 10%;
+    font-size: 17px;
+    line-height: 25px;
+}
+.profile .container .profile-desc .title h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+.profile .container .profile-desc .title h2 span {
+    color: #ff305b;
+}
+.profile .container .profile-desc .desc p {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #333;
+}
+.profile .container .profile-desc .details p {
+    float: left;
+    width: 45%;
+    margin-bottom: 15px;
+}
+.profile .container .profile-desc .details p span {
+    font-weight: 700;
+    color: #333;
+}
+.profile .container .profile-desc .hire {
+    margin-top: 10px;
+}
+.profile .container .profile-desc .hire button {
+    border:0;
+    background-color: #ff305b;
+    padding: 10px 24px;
+    color: #fff;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.profile .container .profile-desc .hire button:hover {
+    background-color: #333;
+}
+
+
+
+
+
+.our-services .container .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.our-services .container .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+}
+
+
+.our-services .container .blocks {
+    overflow: auto;
+}
+.our-services .container .blocks .block {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 40px 15px;
+    transition: all 0.3s ease-in-out;
+}
+.our-services .container .blocks .block i {
+    color: #ff305b;
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+.our-services .container .blocks .block h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+.our-services .container .blocks .block:hover {
+    background-color: #fff;
+    border-radius: 10px;   
+}
+.our-services .container .blocks .block:hover i {
+    transform: scale(1.2);
+}
+
+
+
+
+
+.portfolio .container .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.portfolio .container .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+}
+.portfolio .container .tabs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.portfolio .container .tabs a {
+    color: #333;
+    padding-right: 25px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.portfolio .container .tabs a.last {
+    padding-right: 0;
+}
+.portfolio .container .tabs a.active {
+    color: #ff305b;
+}
+.portfolio .container .tabs a:hover {
+    color: #ff305b;
+}
+.portfolio .container .blocks {
+    overflow: auto;
+}
+.portfolio .container .blocks .block {
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    padding: 15px 15px;
+}
+.portfolio .container .blocks .block .contain-img {
+    position: relative;
+}
+.portfolio .container .blocks .block .contain-img img {
+    width: 100%;
+}
+.portfolio .container .blocks .block .contain-img .portfolio-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+.portfolio .container .blocks .block .contain-img:hover .portfolio-overlay {
+    background-color: rgba(0,0,0,.6);
+}
+
+
+
+
+
+.stats .container .blocks {
+    overflow: auto;
+}
+.stats .container .blocks .block {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 40px 15px;
+    transition: all 0.3s ease-in-out;
+}
+.stats .container .blocks .block i {
+    color: #ff305b;
+    font-size: 26px;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+.stats .container .blocks .block h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+}
+.stats .container .blocks .block p {
+    font-weight: 500;
+}
+
+
+
+
+
+.feedback .container {
+    padding: 70px 25%;
+}
+.feedback .container .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.feedback .container .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+}
+.feedback .container .blocks .blocki, .feedback .container .blocks .blockii {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.feedback .container .blocks .block-img {
+    float: left;
+    width: 15%;
+    padding-top: 10px;
+}
+.feedback .container .blocks .block-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+.feedback .container .blocks .block-content {
+    width: 85%;
+    float: left;
+    padding-left: 25px;
+}
+.feedback .container .blocks .block-content h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.feedback .container .blocks .block-content h4 {
+    margin-bottom: 10px;
+}
+.feedback .container .blocks .block-content i {
+    font-size: 12px;
+}
+.feedback .container .blocks .block-content a {
+    font-size: 14px;
+    color: #777;
+    font-weight: 500;
+}
+.feedback .container .blocks .block-content p {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.feedback .container .blocks .block-content .review i {
+    color: #f1c30d;
+}
+.feedback .container .blocks .dots {
+    margin: auto;
+}
+.feedback .container .blocks .dots .doti {
+    width: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    height: 10px;
+    background-color: #ff305b;
+    margin: auto;
+}
+.feedback .container .blocks .dots .dotii {
+    width: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    height: 10px;
+    border: 1px solid #ff305b;
+    margin: auto;
+}
+
+
+
+
+
+
+.our-blog .container .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.our-blog .container .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+}
+
+
+.our-blog .container .blocks {
+    overflow: auto;
+}
+.our-blog .container .blocks .block {
+    width: 33.3333%;
+    float: left;
+    padding: 20px 15px;
+}
+.our-blog .container .blocks .block .item {
+    text-align: left;
+    background-color: #fff;
+}
+.our-blog .container .blocks .block .block-img img {
+    width: 100%;
+}
+.our-blog .container .blocks .block .block-content {
+    padding: 20px;
+}
+.our-blog .container .blocks .block .block-content p {
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.our-blog .container .blocks .block .block-content a h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    transition: all .3s;
+}
+.our-blog .container .blocks .block .block-content a h3:hover {
+    color: #ff305b;
+}
+.our-blog .container .blocks .block .block-content a {
+    margin-bottom:20px;
+    color: #555555;
+    transition: all .3s;
+}
+.our-blog .container .blocks .block .block-content a:hover {
+    color: #ff305b;
+}
+
+
+
+
+
+.contact .container {
+    padding: 70px 20%;
+}
+.contact .container .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact .container .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+}
+.contact .container form .forms {
+    padding: 15px;
+}
+.contact .container form .forms .line {
+    margin-bottom: 15px;
+    padding: 15px 0;
+    overflow: auto;
+}
+.contact .container form .forms .line .input50 {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+.contact .container form .forms .line .last {
+    padding-right: 0;
+}
+.contact .container form .forms .line input, textarea {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    transition: all .3s;
+}
+.contact .container form .forms .line textarea {
+    height: 100px;
+}
+.contact .container form .forms .line input:focus, textarea:focus {
+    border: 1px solid #ff305b;
+    outline: none;
+}
+.contact .container form .forms button {
+    border:0;
+    background-color: #ff305b;
+    padding: 10px 24px;
+    color: #fff;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s;
+    cursor: not-allowed;
+}
+.contact .container form .forms button:hover {
+    background-color: #333;
+}
+
+
+
+
+.footer {
+    background-color: #333;
+}
+.footer .container {
+    padding: 50px 10%;
+    text-align: center;
+}
+.footer .container .social-icons {
+    margin-bottom: 20px;
+}
+.footer .container .social-icons i {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 20px;
+    transition: all .3s;
+}
+.footer .container .social-icons i:hover {
+    color: #ff305b;
+}
+.footer .container .copy-rights p {
+    color: #fff;
+}
+.footer .container .copy-rights p a {
+    color: #ff305b;
+}
+
+
+
+
+/* Media query */
+
+/* for Mobiles screens */
+@media only screen and (max-width: 600px){
+
+    .container, .feedback .container, .contact .container {
+        padding: 70px 5%;
+    }
+    .profile .container .profile-pic {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .profile .container .profile-desc {
+        width: 100%;
+        padding-left: 0;
+    }
+    .profile .container .profile-desc .details p {
+        width: 100%;
+    }
+
+
+    .our-services .container .blocks .block {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .portfolio .container .blocks .block {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+
+    .stats .container .blocks .block {
+        width: 100%;
+    }
+
+
+    .feedback .container .blocks .block-img {
+        float: none;
+        text-align: center;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .feedback .container .blocks .block-content {
+        width: 100%;
+        float: none;
+    }
+
+
+    .our-blog .container .blocks .block {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+
+
+    .contact .container form .forms .line .input50 {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+    .contact .container form .forms {
+        padding: 15px 0;
+    }
+}
+
+
+
+
+
+
+/* for Tablets screens */
+@media only screen and (min-width:601px) and (max-width: 992px) {
+
+    .container, .feedback .container, .contact .container {
+        padding: 70px 5%;
+    }
+
+    .profile .container .profile-pic .pic-overlay .social-icons i {
+        margin-right: 2px;
+    }
+    .profile .container .profile-desc .details p {
+        width: 100%;
+    }
+
+    .our-services .container .blocks .block {
+        width: 50%;
+        padding: 40px 15px;
+    }
+
+    .portfolio .container .blocks .block {
+        width: 50%;
+    }
+
+
+    .stats .container .blocks .block {
+        width: 50%;
+    }
+
+
+    .feedback .container .blocks .block-img {
+        float: none;
+        text-align: center;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .feedback .container .blocks .block-content {
+        width: 100%;
+        float: none;
+    }
+
+
+    .our-blog .container .blocks .block {
+        width: 50%;
+        padding: 20px 10px;
+    }
+
+
+
+    .contact .container form .forms .line .input50 {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+    .contact .container form .forms {
+        padding: 15px 0;
+    }
+
+    @media only screen and (min-width:801px) and (max-width: 992px) {
+        .profile .container .profile-pic .pic-overlay .social-icons i {
+            margin-right: 8px;
+        }
+        .feedback .container .blocks .block-img {
+            float: left;
+            width: 15%;
+            padding-top: 10px;
+        }
+        .feedback .container .blocks .block-content {
+            width: 85%;
+            float: left;
+            padding-left: 25px;
+        }
+    }
+
+}
